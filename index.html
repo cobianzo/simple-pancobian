@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"></script>
+        <!-- <script src="panolens.js/build/panolens.js"></script> -->
+        <script src="pancobian.js"></script>
+    </head>
+    <body>
+
+		<div id="pancobian-container"></div>
+        <script>
+            const pc = document.querySelector('#pancobian-container').pancobian({ 
+                scenes: [
+                    {
+                        panorama: 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/2294472375_24a3b8ef46_o.jpg',
+                        name: 'Hall'
+                    },
+                    {
+                        panorama: 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/field.jpg'
+                    }
+                ]
+            })
+        </script>
+		<div id="container"></div>
+    </body>
+</html>

@@ -130,8 +130,8 @@
             self.onPointerDownPointerX = event.clientX;
             self.onPointerDownPointerY = event.clientY;
 
-            self.onPointerDownLon = lon;
-            self.onPointerDownLat = lat;
+            self.onPointerDownLon = self.lon;
+            self.onPointerDownLat = self.lat;
             
         }
         self.onDocumentMouseMove = function ( event ) {
